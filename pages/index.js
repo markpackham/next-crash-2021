@@ -1,18 +1,10 @@
 import { server } from "../config";
 // Next JS is far more SEO friendly than regular React thanks to Head letting us use meta data
-import Head from "next/head";
 import ArticleList from "../components/ArticleList";
 
 export default function Home({ articles }) {
   return (
     <div>
-      <Head>
-        <title>WebDev News</title>
-        <meta
-          name="keywords"
-          content="web developement, seo, coding, keywords-example-in-Nextjs"
-        />
-      </Head>
       <ArticleList articles={articles} />
     </div>
   );
